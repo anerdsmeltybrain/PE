@@ -4,7 +4,11 @@
 
 int main()
 {
-  char statement[] = "Hello World";
-  printf("%s", statement);
+  int sum = 0;
+  for (int i = 0; i < 1000; i++) {
+    int container[] = {0};
+    sum += container[i];
+    printf("\n%d", container[i]);
+  }
   return 0;
 }
