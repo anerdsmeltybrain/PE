@@ -1,14 +1,18 @@
 #include "stdio.h"
 
-//adding a comment to test things
+int main() {
 
-int main()
-{
   int sum = 0;
   for (int i = 0; i < 1000; i++) {
-    int container[] = {0};
-    sum += container[i];
-    printf("\n%d", container[i]);
+    if (i % 3 == 0) {
+      //printf("%d\n", i);
+      sum += i;
+      printf("%d : is the new sum\n", sum);
+    } else if (i % 5 == 0) {
+      //printf("%d\n", i);
+      sum += i;
+      printf("%d : is the new sum\n", sum);
+    }
   }
-  return 0;
+return 0;
 }
